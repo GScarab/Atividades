@@ -1,3 +1,183 @@
+//Capítulo 2 - Questão 1
+import { resolverTorreHanoi3Discos } from './atv_cap2/q1.js';
+console.log("=== QUESTÃO 1 ===");
+console.log("Torre de Hanoi com 3 discos\n");
+
+const solucao3Discos = resolverTorreHanoi3Discos();
+console.log(`Enunciado: ${solucao3Discos.enunciado}`);
+console.log(`\nTotal de discos: ${solucao3Discos.totalDiscos}`);
+console.log(`Total de movimentos necessários: ${solucao3Discos.totalMovimentos}`);
+console.log(`Fórmula: ${solucao3Discos.formula}`);
+console.log(`\nExplicação: ${solucao3Discos.explicacao}`);
+
+console.log("\nSequência de movimentos:");
+solucao3Discos.sequencia.forEach(passo => {
+    console.log(`  ${passo.movimento}. ${passo.descricao}`);
+});
+
+console.log("\nAlgoritmo em pseudocódigo:");
+console.log(solucao3Discos.algoritmo);
+
+//Capítulo 2 - Questão 2
+import { resolverTorreHanoi4Discos } from './atv_cap2/q2.js';
+console.log("\n\n=== QUESTÃO 2 ===");
+console.log("Torre de Hanoi com 4 discos\n");
+
+const solucao4Discos = resolverTorreHanoi4Discos();
+console.log(`Enunciado: ${solucao4Discos.enunciado}`);
+console.log(`\nTotal de discos: ${solucao4Discos.totalDiscos}`);
+console.log(`Total de movimentos necessários: ${solucao4Discos.totalMovimentos}`);
+console.log(`Fórmula: ${solucao4Discos.formula}`);
+console.log(`Estratégia: ${solucao4Discos.estrategia}`);
+console.log(`\nExplicação: ${solucao4Discos.explicacao}`);
+
+console.log("\nSequência de movimentos:");
+solucao4Discos.sequencia.forEach(passo => {
+    console.log(`  ${passo.movimento}. ${passo.descricao}`);
+});
+
+console.log("\nAlgoritmo recursivo em pseudocódigo:");
+console.log(solucao4Discos.algoritmo);
+
+
+
+
+
+
+//Capítulo 3 - Questão 1
+import { caracteristicasJavaScript } from './atv_cap3/q1.js';
+const caracteristicas = caracteristicasJavaScript();
+console.log(caracteristicas.titulo);
+caracteristicas.lista.forEach(item => console.log(`- ${item}`));
+
+//Capítulo 3 - Questão 2
+import { diferencaJavaScriptECMAScript } from './atv_cap3/q2.js';
+const diferenca = diferencaJavaScriptECMAScript();
+console.log(diferenca.javascript);
+console.log(diferenca.ecmascript);
+console.log(diferenca.relacao);
+
+//Capítulo 3 - Questão 3
+import { ambientesExecucaoJavaScript } from './atv_cap3/q3.js';
+const ambientes = ambientesExecucaoJavaScript();
+console.log(ambientes.titulo);
+ambientes.lista.forEach(ambiente => console.log(`- ${ambiente}`));
+
+//Capítulo 3 - Questão 4
+import { caracteristicasBun } from './atv_cap3/q4.js';
+const bunCaracteristicas = caracteristicasBun();
+console.log(bunCaracteristicas.titulo);
+bunCaracteristicas.lista.forEach(item => console.log(`- ${item}`));
+
+//Capítulo 3 - Questão 5
+import { funcaoConsoleLog } from './atv_cap3/q5.js';
+const consoleLogInfo = funcaoConsoleLog();
+console.log(consoleLogInfo.descricao);
+
+//Capítulo 3 - Questão 6
+import { comandoOláMundoQuestao6 } from './atv_cap3/q6.js';
+const cmdHello6 = comandoOláMundoQuestao6();
+console.log(`Resposta: ${cmdHello6}`);
+
+//Capítulo 3 - Questão 7
+import { comandoOláMundoQuestao7 } from './atv_cap3/q7.js';
+const cmdHello7 = comandoOláMundoQuestao7();
+console.log(`Resposta: ${cmdHello7}`);
+
+//Capítulo 3 - Questão 8
+import { extensoesVSCode } from './atv_cap3/q8.js';
+const extensoes = extensoesVSCode();
+console.log(extensoes.titulo);
+extensoes.lista.forEach(extensao => console.log(extensao));
+
+//Capítulo 3 - Questão 9
+import { configuracoesVSCode } from './atv_cap3/q9.js';
+const configs = configuracoesVSCode();
+console.log(configs.titulo);
+Object.entries(configs.configuracoes).forEach(([chave, valor]) => {
+    console.log(`"${chave}": ${valor}`);
+});
+
+
+
+
+
+
+//Capítulo 4 - Questão 1
+import { respostaVariavel } from './atv_cap4/q1.js';
+const resposta1 = respostaVariavel();
+console.log(resposta1.pergunta);
+console.log(resposta1.resposta);
+
+//Capítulo 4 - Questão 2
+import { respostaTipagemDinamica } from './atv_cap4/q2.js';
+const resposta2 = respostaTipagemDinamica();
+console.log(resposta2.pergunta);
+console.log(resposta2.resposta);
+
+//Capítulo 4 - Questão 3
+import { respostaNomesDescritivos } from './atv_cap4/q3.js';
+const resposta3 = respostaNomesDescritivos();
+console.log(resposta3.pergunta);
+console.log(resposta3.resposta);
+
+//Capítulo 4 - Questão 4
+import { programaBoasVindas } from './atv_cap4/q4.js';
+console.log(programaBoasVindas());
+
+//Capítulo 4 - Questão 5
+import { respostaVarLetConst } from './atv_cap4/q5.js';
+const resposta5 = respostaVarLetConst();
+console.log(resposta5.pergunta);
+console.log(resposta5.resposta);
+
+//Capítulo 4 - Questão 6
+import { demonstrarTiposDados } from './atv_cap4/q6.js';
+const tiposDados = demonstrarTiposDados();
+console.log(tiposDados.inteiro);
+console.log(tiposDados.decimal);
+
+//Capítulo 4 - Questão 7
+import { demonstrarComentarios } from './atv_cap4/q7.js';
+console.log(demonstrarComentarios());
+
+//Capítulo 4 - Questão 8
+import { solicitarNomeUsuario } from './atv_cap4/q8.js';
+console.log(solicitarNomeUsuario());
+
+//Capítulo 4 - Questão 9
+import { solicitarIdadeUsuario } from './atv_cap4/q9.js';
+console.log(solicitarIdadeUsuario());
+
+//Capítulo 4 - Questão 10
+import { solicitarNomeIdade } from './atv_cap4/q10.js';
+console.log(solicitarNomeIdade());
+
+//Capítulo 4 - Questão 11
+import { converterComParseInt } from './atv_cap4/q11.js';
+const conversaoParseInt = converterComParseInt();
+console.log(`Entrada simulada: "${conversaoParseInt.entrada}"`);
+console.log(conversaoParseInt.resultado);
+
+//Capítulo 4 - Questão 12
+import { converterComParseFloat } from './atv_cap4/q12.js';
+const conversaoParseFloat = converterComParseFloat();
+console.log(`Entrada simulada: "${conversaoParseFloat.entrada}"`);
+console.log(conversaoParseFloat.resultado);
+
+//Capítulo 4 - Questão 13
+import { converterComNumber } from './atv_cap4/q13.js';
+const conversaoNumber = converterComNumber();
+console.log(`Primeira entrada: "${conversaoNumber.primeira.entrada}"`);
+console.log(conversaoNumber.primeira.resultado);
+console.log(`\nSegunda entrada (exemplo adicional): "${conversaoNumber.segunda.entrada}"`);
+console.log(conversaoNumber.segunda.resultado);
+
+
+
+
+
+
 //Capítulo 5 - Questão 1
 import { soma } from './atv_cap5/q1.js';
 const resultadoSoma = soma(25, 17);
@@ -408,3 +588,96 @@ import { converterParaMaiusculas } from './atv_cap7/q24.js';
 let frase = "aprender javascript é divertido";
 let fraseMaiuscula = converterParaMaiusculas(frase);
 console.log(fraseMaiuscula);
+
+
+
+
+
+
+//Capítulo 8 - Questão 1
+import { vantagensModularizacao } from './atv_cap8/q1.js';
+const vantagens = vantagensModularizacao();
+vantagens.forEach(v => console.log(v));
+
+//Capítulo 8 - Questão 2
+import { comparacaoModulos } from './atv_cap8/q2.js';
+const comparacao = comparacaoModulos();
+console.log(comparacao.commonjs);
+console.log(comparacao.esmodules);
+console.log(comparacao.recomendacao);
+
+//Capítulo 8 - Questão 3
+const q3 = require('./atv_cap8/q3.js');
+const operacoesCJS = q3.operacoesMatematicas();
+console.log(operacoesCJS.soma);
+console.log(operacoesCJS.subtracao);
+console.log(operacoesCJS.multiplicacao);
+console.log(operacoesCJS.divisao);
+console.log(operacoesCJS.divisaoPorZero);
+console.log(operacoesCJS.exponenciacao);
+
+//Capítulo 8 - Questão 4
+import { operacoesMatematicasESM } from './atv_cap8/q4.js';
+const operacoesESM = operacoesMatematicasESM();
+console.log(operacoesESM.soma);
+console.log(operacoesESM.subtracao);
+console.log(operacoesESM.multiplicacao);
+console.log(operacoesESM.divisao);
+console.log(operacoesESM.divisaoPorZero);
+console.log(operacoesESM.exponenciacao);
+
+//Capítulo 8 - Questão 5
+import { gerenciarUsuarios } from './atv_cap8/q5.js';
+const usuariosGerenciados = gerenciarUsuarios();
+console.log(usuariosGerenciados.inicial);
+console.log(usuariosGerenciados.atualizado);
+console.log(usuariosGerenciados.final);
+
+//Capítulo 8 - Questão 6
+import { calcularLogaritmos } from './atv_cap8/q6.js';
+const logaritmos = calcularLogaritmos();
+console.log(logaritmos.log10);
+console.log(logaritmos.loge);
+
+//Capítulo 8 - Questão 7
+import { realizarTodasConversoes } from './atv_cap8/q7.js';
+const conversoes = realizarTodasConversoes();
+console.log(conversoes.tempo);
+console.log(conversoes.dados);
+
+
+
+
+
+
+//Capítulo 9 - Questão 1
+import { demonstrarRedeSocial } from './atv_cap9/q1.js';
+const resultadosRedeSocial = demonstrarRedeSocial();
+console.log(`Seguidores do Carlos: ${resultadosRedeSocial.seguidoresUsuario2}`);
+console.log(`Pessoas que Ana segue: ${resultadosRedeSocial.seguindoUsuario1}`);
+console.log(`Curtidas na publicação: ${resultadosRedeSocial.curtidasPublicacao}`);
+console.log(`Comentários na publicação: ${resultadosRedeSocial.comentariosPublicacao}`);
+console.log(`Descrição atual: ${resultadosRedeSocial.descricaoAtual}`);
+console.log(`Texto do comentário: ${resultadosRedeSocial.textoComentario}`);
+
+//Capítulo 9 - Questão 2
+import { demonstrarBiblioteca } from './atv_cap9/q2.js';
+const resultadosBiblioteca = demonstrarBiblioteca();
+console.log(`Total de livros: ${resultadosBiblioteca.totalLivros}`);
+console.log(`Total de usuários: ${resultadosBiblioteca.totalUsuarios}`);
+console.log(`Livros disponíveis: ${resultadosBiblioteca.livrosDisponiveis}`);
+console.log(`Livros emprestados: ${resultadosBiblioteca.livrosEmprestados}`);
+console.log(`Livros com Maria: ${resultadosBiblioteca.livrosMaria}`);
+console.log(`"1984" disponível: ${resultadosBiblioteca.disponibilidade1984}`);
+console.log(`"Dom Casmurro" disponível: ${resultadosBiblioteca.disponibilidadeDomCasmurro}`);
+
+//Capítulo 9 - Questão 3
+import { demonstrarAplicativoMusicas } from './atv_cap9/q3.js';
+const resultadosMusicas = demonstrarAplicativoMusicas();
+console.log(`Total de artistas: ${resultadosMusicas.totalArtistas}`);
+console.log(`Músicas do Queen: ${resultadosMusicas.totalMusicasArtista1}`);
+console.log(`Músicas dos Beatles: ${resultadosMusicas.totalMusicasArtista2}`);
+console.log(`Músicas na playlist: ${resultadosMusicas.musicasPlaylist}`);
+console.log(`Música atual: ${resultadosMusicas.musicaAtual}ª da playlist`);
+console.log(`Música tocando: ${resultadosMusicas.musicaTocando}`);
+console.log(`Artista da música atual: ${resultadosMusicas.nomeArtistaMusicaAtual}`);
